@@ -1,0 +1,8 @@
+streamlit
+requests
+sqlalchemy
+utm
+tqdm
+rtree
+pandas
+polars

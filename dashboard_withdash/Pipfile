@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dash = "*"
+dash-bootstrap-components = "*"
+flask = "*"
+flask-sqlalchemy = "*"
+gunicorn = {extras = ["gthread"], version = "*"}
+python-dotenv = "*"
+requests = "*"
+tqdm = "*"
+pandas = "*"
+dash-leaflet = "*"
+dash-extensions = "*"
+rtree = "*"
+utm = "*"
+protobuf = {version="<= 3.19"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

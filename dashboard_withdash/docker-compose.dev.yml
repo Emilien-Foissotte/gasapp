@@ -1,0 +1,42 @@
+version: "3.7"
+
+services:
+  # nginx-proxy:
+  #   image: nginxproxy/nginx-proxy
+  #   volumes:
+  #     - /var/run/docker.sock:/tmp/docker.sock:ro
+  #   ports:
+  #     - 80:80
+  redis:
+    image: redis
+  postgres:
+    container_name: postgres
+    image: postgres
+    env_file: database.conf
+    ports:
+      - 5432:5432
+    volumes:
+      - dbdatagas:/var/lib/postgresql/data/gas:rw
+    environment:
+      PGDATA: /var/lib/postgresql/data/gas/
+  app_dev:
+    build: ./
+    # volumes:
+    #   - db/stations.db:/App/db/stations.db:rw
+    env_file: database.conf
+    command: >
+      sh -c "python index.py"
+    expose:
+      - "8050"
+    environment:
+      - REDISTOGO_URL=redis://redis:6379
+      - VIRTUAL_HOST=www.gas2.emilienfoissotte.local,gas2.emilienfoissotte.local
+      - VIRTUAL_PORT=8050
+    depends_on:
+      - redis
+    ports:
+      - 8050:8050
+
+volumes:
+  dbdatagas:
+  backupdbdata:

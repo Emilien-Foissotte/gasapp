@@ -1,0 +1,44 @@
+{
+    "stations": [
+      {
+        "adresse": "226 BLD DE LA LOIRE",
+        "nom": "Total Périph Nantes",
+        "ident" : 44115003
+      },
+      {
+        "adresse": "78 Grand'Rue",
+        "nom": "Station La Chevrolière",
+        "ident" : 44118003
+      },
+      {
+        "adresse": "Rue des Vignes",
+        "nom": "Super U Pt St Martin",
+        "ident": 44860002
+      },
+      {
+        "adresse": "AVENUE GEORGES POMPIDOU",
+        "nom": "Leclerc Chiot",
+        "ident": 53200005
+      },
+      {
+        "adresse": "PLACE DU CHAMP DE FOIRE",
+        "nom" : "Market Chiot",
+        "ident" : 53200001
+      },
+      {
+        "adresse": "155 AVENUE DU GENERAL LECLERC",
+        "nom": "Total Gif/Yvette",
+        "ident" : 91190011
+      },
+      {
+        "adresse": "PLACE DE BEAUPLAN",
+        "nom": "Carrefour Magny",
+        "ident": 78470001
+      },
+      {
+        "adresse": "rue vincent van gogh",
+        "nom": "Intermarché Magny",
+        "ident": 78114001
+      }
+    ]
+  }
