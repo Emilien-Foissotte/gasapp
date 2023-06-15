@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+{% endblock %}
+
+{% block body %}
+ <!-- First Div, table container to save predicitons  -->
+<div>
+    <div style="margin-left: auto;margin-right: auto;">
+        <h1 style="text-align: center"> Gas Stations</h1>
+        {% if jsondata|length < 1 %}
+        <h4 style="text-align: center"> La liste est vide</h4>
+        {% else %}
+        <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+            <tr>
+                <th style="text-align: center">Nom</th>
+                <th style="text-align: center">Essence</th>
+                <th style="text-align: center">Prix</th>
+                <th style="text-align: center">Dernière Maj </th>
+            </tr>
+            {%for station in jsondata.stations %}
+                <tr>
+                    <td style="text-align: center">{{station.nom}}</td>
+                    <td style="text-align: center">{{station.essence}}</td>
+                    <td style="text-align: center">{{station.prix}}</td>
+                    <td style="text-align: center">{{station.maj}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+</div>
+<div>
+    <div class="login" style="margin-left: auto;margin-right: auto;">
+      <form action="/" method="POST">
+        <br><br><button type="submit" class="btn btn-primary btn-block btn-large">Mettre à jour</button><br><br>
+      </form>
+    </div>
+</div>
+
+
+{% endblock %}

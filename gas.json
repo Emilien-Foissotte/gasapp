@@ -1,0 +1,64 @@
+{
+    "stations": [
+        {
+            "nom": "Total Gif/Yvette",
+            "essence": "E10",
+            "prix": "1.632 \u20ac",
+            "maj": "24/11"
+        },
+        {
+            "nom": "Station La Chevroli\u00e8re",
+            "essence": "SP95",
+            "prix": "1.679 \u20ac",
+            "maj": "19/11"
+        },
+        {
+            "nom": "Magny les Hameaux",
+            "essence": "SP95",
+            "prix": "1.692 \u20ac",
+            "maj": "16/11"
+        },
+        {
+            "nom": "Magny les Hameaux",
+            "essence": "E10",
+            "prix": "1.648 \u20ac",
+            "maj": "20/11"
+        },
+        {
+            "nom": "Voisins le Btx",
+            "essence": "SP95",
+            "prix": "1.638 \u20ac",
+            "maj": "22/11"
+        },
+        {
+            "nom": "Voisins le Btx",
+            "essence": "E10",
+            "prix": "1.615 \u20ac",
+            "maj": "22/11"
+        },
+        {
+            "nom": "Super U Pt St Martin",
+            "essence": "SP95",
+            "prix": "1.635 \u20ac",
+            "maj": "23/11"
+        },
+        {
+            "nom": "Super U Pt St Martin",
+            "essence": "E10",
+            "prix": "1.595 \u20ac",
+            "maj": "23/11"
+        },
+        {
+            "nom": "Total P\u00e9riph Nantes",
+            "essence": "E10",
+            "prix": "1.589 \u20ac",
+            "maj": "24/11"
+        },
+        {
+            "nom": "Leclerc Chiot",
+            "essence": "SP95",
+            "prix": "1.602 \u20ac",
+            "maj": "24/11"
+        }
+    ]
+}
